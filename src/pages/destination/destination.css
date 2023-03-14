@@ -1,0 +1,243 @@
+.destination--bg {
+  background: url("../../assets/destination/background-destination-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 110vh;
+}
+.destination-header {
+  display: flex;
+  align-items: center;
+  padding-top: 5rem;
+  padding-left: 4rem;
+}
+.des-num {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+.des-span {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  padding-left: 20px;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.destination-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1100px;
+  margin: auto;
+  padding-top: 5rem;
+  gap: 12rem;
+  justify-content: space-between;
+}
+.destination-btn {
+  display: flex;
+  color: #fff;
+}
+.destination-btn a {
+  padding-left: 25px;
+  padding-right: 15px;
+  padding-bottom: 1rem;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 300;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+  color: #fff;
+}
+.destination-btn a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.destination-btn a::before {
+  content: "";
+  position: absolute;
+  place-items: center;
+  display: block;
+  width: 60%;
+  height: 3px;
+  bottom: 0;
+  margin-top: 10rem;
+  background-color: #fff;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: color 0.1s, transform 0.2s ease-out;
+}
+.destination-btn a:active::before {
+  background-color: #fff;
+}
+.destination-btn a:hover::before,
+a:focus::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+.destination-info h1 {
+  color: #fff;
+}
+.destination-info-sec {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.des-info p:nth-child(2) {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  width: 400px;
+  color: #d0d6f9;
+}
+.destination-container img {
+  object-fit: contain;
+  width: 445px;
+  height: 445px;
+}
+.des-distance {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+.des-line {
+  height: 2px;
+  width: 444px;
+  background-color: rgb(94, 93, 93);
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+.des-info {
+  /* width: 850px; */
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  gap: 25px;
+  padding-bottom: 1rem;
+}
+.des-btn {
+  color: #fff;
+}
+
+.des-btn:hover {
+  cursor: pointer;
+  color: aliceblue;
+}
+
+.active-btn {
+  color: orange;
+}
+.des-distance h4 {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+  color: #d0d6f9;
+}
+.des-distance h2 {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  padding-top: 1rem;
+  color: #ffffff;
+}
+.des-header-p {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 115px;
+  color: #ffffff;
+  padding-top: 2rem;
+  padding-left: 1.5rem;
+}
+@media screen and (max-width: 990px) {
+  .destination-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .des-info {
+    padding-bottom: 4rem;
+  }
+  .des-info p:nth-child(2) {
+    text-align: center;
+    width: 573px;
+  }
+
+  .destination-info-sec {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .des-line {
+    width: 100%;
+  }
+  .des-header-p {
+    text-align: center;
+  }
+  .des-distance {
+    text-align: center;
+    justify-content: center;
+    gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .des-span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+  .des-num {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+  .destination-container img {
+    width: 270px;
+    height: 270px;
+  }
+  .des-info p:nth-child(2) {
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    font-size: 15px;
+    width: 327px;
+    line-height: 25px;
+  }
+  .des-distance {
+    flex-direction: column;
+  }
+  .destination-btn a {
+    padding-left: 5px;
+  }
+  .des-header-p {
+    padding-left: 0;
+  }
+  .destination-info-sec {
+    padding-top: 0;
+  }
+}

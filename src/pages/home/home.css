@@ -1,0 +1,144 @@
+.home-bg {
+  background-image: url("../../assets/home/background-home-desktop.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 100vh;
+}
+.home-body {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1600px;
+  margin: auto;
+  padding-top: 10rem;
+}
+.home-text-area h1 {
+  text-transform: uppercase;
+}
+.home-upper-text {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+
+  color: #d0d6f9;
+}
+.home-text-area {
+  color: #fff;
+  font-family: var(--font-poppins);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 3rem;
+}
+
+.home-text-area p {
+  width: 444px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #d0d6f9;
+  padding-bottom: 2rem;
+  margin-top: 0;
+}
+.big-text {
+  font-size: 15rem;
+  font-weight: lighter;
+  text-transform: capitalize;
+  font-family: "Bellefair";
+  padding-left: 2rem;
+  padding-top: 0;
+  margin-bottom: 10px;
+  color: rgb(238, 233, 224);
+  margin-top: 0;
+}
+.side-text {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  padding: 20px;
+  border-radius: 100%;
+  background-color: #fff;
+
+  text-align: center;
+}
+.side-text h1 {
+  color: #000;
+  position: absolute;
+  top: 40%;
+  right: 30%;
+  font-family: var(--font-poppins);
+  text-transform: uppercase;
+}
+@media screen and (max-width: 990px) {
+  .home-bg {
+    background: url("../../assets//home/background-home-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+  }
+  .home-body {
+    flex-direction: column;
+  }
+  .home-text-area {
+    padding-bottom: 5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+  }
+  .home-upper-text {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 3.375px;
+    padding-bottom: 2rem;
+  }
+  .home-text-area p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 28px;
+    width: 400px;
+  }
+  .big-text {
+    font-size: 160px;
+    line-height: 150px;
+  }
+  .side-text {
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .home-bg {
+    background: url("../../assets/home/background-home-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+  }
+  .home-text-area {
+    text-align: center;
+    padding-left: 0;
+  }
+  .home-upper-text {
+    font-size: 15px;
+  }
+  .home-text-area p {
+    width: 300px;
+    font-size: 12px;
+    text-align: center;
+    padding-left: 1rem;
+    font-size: 12px;
+  }
+  .big-text {
+    font-size: 120px;
+    padding-left: 0;
+  }
+}
